@@ -28,5 +28,4 @@ router.patch('/:id', (req, res) => {
   res.json({message: 'UPDATE a workout'})
 })
 
-
 module.exports = router;
