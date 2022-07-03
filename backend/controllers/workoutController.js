@@ -41,5 +41,6 @@ const createWorkout = async (req, res) => {
 
 module.exports = {
   createWorkout,
-  getWorkouts
+  getWorkouts,
+  getWorkout
 }
