@@ -3,7 +3,7 @@ const Workout = require('../models/workoutModel')
 // get all workouts
 const getWorkouts = async (req, res) => {
   try {
-    const workout = await Workout.find()
+    const workout = await Workout.find({}).sort({createdAt: -1})
     res.status(200).json(workout)
   } catch (error) {
     res.status(400).json({error: error.message})
