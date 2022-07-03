@@ -1,7 +1,7 @@
 const Workout = require('../models/workoutModel')
 
 // get all workouts
-const getAllWorkouts = async (req, res) => {
+const getWorkouts = async (req, res) => {
   try {
     const workout = await Workout.find()
     res.status(200).json(workout)
@@ -30,5 +30,5 @@ const createWorkout = async (req, res) => {
 
 module.exports = {
   createWorkout,
-  getAllWorkouts
+  getWorkouts
 }
