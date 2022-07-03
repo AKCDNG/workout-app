@@ -11,6 +11,17 @@ const getWorkouts = async (req, res) => {
 }
 
 // get a single workout
+const getWorkout = async (req, res) => {
+  const { id } = req.params
+
+  const workout = await Workout.findById(id)
+  
+  if(!workout) {
+    return res.status(404).json({error: "Workout does not exist."})
+  }
+
+  res.status(200).json(workout)
+}
 
 // create new workout
 const createWorkout = async (req, res) => {
