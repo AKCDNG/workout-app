@@ -3,7 +3,7 @@
 
 /* layout */
 :root {
-  --primary: #009dfe;
+  --primary: #1aac83;
   --error: #e7195a;
 }
 body {
@@ -89,16 +89,6 @@ form button {
   border-radius: 4px;
   cursor: pointer;
 }
-
-form button:hover {
-  background:#005b93;
-  border: 0;
-  color: #fff;
-  padding: 10px;
-  font-family: "Poppins";
-  border-radius: 4px;
-  cursor: pointer;
-}
 div.error {
   padding: 10px;
   background: #ffefef;
@@ -106,4 +96,7 @@ div.error {
   color: var(--error);
   border-radius: 4px;
   margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
 }
